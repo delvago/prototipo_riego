@@ -1,9 +1,13 @@
+#define Moto_Bomba 32
 void setup() {
-  // put your setup code here, to run once:
-
+  Serial.begin(115200);
+  Serial.print("-----Inicio Prototipo riego UPB----- "); 
+  pinMode(Moto_Bomba, OUTPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  
+  digitalWrite(Moto_Bomba, HIGH);
+  digitalWrite(Moto_Bomba, LOW);
 
 }
